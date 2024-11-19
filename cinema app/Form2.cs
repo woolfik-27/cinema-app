@@ -86,5 +86,10 @@ namespace cinema_app
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
