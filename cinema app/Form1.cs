@@ -11,16 +11,16 @@ using System.Windows.Forms;
 
 namespace cinema_app
 {
-    public partial class Form1 : Form
+    public partial class LoginForm : Form
     {
-        public Form1()
+        public LoginForm()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-         
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -28,10 +28,21 @@ namespace cinema_app
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
             Form2 newForm = new Form2();
             newForm.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form3 newForm1 = new Form3();
+            newForm1.Show();
         }
     }
 }

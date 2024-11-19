@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.RegButton = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BackButton = new System.Windows.Forms.Button();
             this.NameTextBox = new System.Windows.Forms.TextBox();
             this.PasswordTextBox = new System.Windows.Forms.TextBox();
             this.LoginTextBox = new System.Windows.Forms.TextBox();
@@ -50,14 +50,14 @@
             this.RegButton.UseVisualStyleBackColor = true;
             this.RegButton.Click += new System.EventHandler(this.RegButton_Click);
             // 
-            // button2
+            // BackButton
             // 
-            this.button2.Location = new System.Drawing.Point(242, 296);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Назад";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BackButton.Location = new System.Drawing.Point(242, 296);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(129, 23);
+            this.BackButton.TabIndex = 2;
+            this.BackButton.Text = "Назад";
+            this.BackButton.UseVisualStyleBackColor = true;
             // 
             // NameTextBox
             // 
@@ -70,6 +70,7 @@
             // 
             this.PasswordTextBox.Location = new System.Drawing.Point(242, 241);
             this.PasswordTextBox.Name = "PasswordTextBox";
+            this.PasswordTextBox.PasswordChar = '*';
             this.PasswordTextBox.Size = new System.Drawing.Size(129, 20);
             this.PasswordTextBox.TabIndex = 5;
             // 
@@ -137,7 +138,7 @@
             this.Controls.Add(this.LoginTextBox);
             this.Controls.Add(this.PasswordTextBox);
             this.Controls.Add(this.NameTextBox);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.RegButton);
             this.Name = "Form2";
             this.Text = "Form2";
@@ -149,7 +150,7 @@
         #endregion
 
         private System.Windows.Forms.Button RegButton;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.TextBox NameTextBox;
         private System.Windows.Forms.TextBox PasswordTextBox;
         private System.Windows.Forms.TextBox LoginTextBox;

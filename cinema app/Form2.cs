@@ -19,6 +19,34 @@ namespace cinema_app
         public Form2()
         {
             InitializeComponent();
+
+            try
+            {
+                List<string> roles = new List<string>();
+
+                using (OleDbConnection connection = new OleDbConnection(db.Class1.ConnectionString))
+                {
+                    connection.Open();
+
+                    string sql = "SELECT [NameOfRole] FROM UsersRole;";
+
+                    OleDbCommand oleDbCommand = new OleDbCommand(sql, connection);
+
+                    using (OleDbDataReader reader = oleDbCommand.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            roles.Add(reader["NameOfRole"].ToString());
+                        }
+                    }
+                }
+
+                RoleComboBox.DataSource = roles;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         private void RegButton_Click(object sender, EventArgs e)
