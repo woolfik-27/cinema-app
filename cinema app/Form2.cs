@@ -70,7 +70,7 @@ namespace cinema_app
                     {
                         MessageBox.Show("Успешная регистрация!");
 
-                        this.Hide();
+                        this.Close();
                         LoginForm loginForm = new LoginForm();
                         loginForm.ShowDialog();
                     }
@@ -90,6 +90,12 @@ namespace cinema_app
         private void Form2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();
         }
     }
 }

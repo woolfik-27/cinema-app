@@ -58,6 +58,7 @@
             this.BackButton.TabIndex = 2;
             this.BackButton.Text = "Назад";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // NameTextBox
             // 

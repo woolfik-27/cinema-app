@@ -55,5 +55,15 @@ namespace cinema_app
         {
 
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SeatNumber_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

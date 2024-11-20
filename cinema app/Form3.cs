@@ -24,8 +24,14 @@ namespace cinema_app
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Close();
             Form4 newForm1 = new Form4();
             newForm1.Show();
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
